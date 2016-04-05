@@ -1,0 +1,20 @@
+make
+./main
+when x=100000
+sort(): 0.04 seconds
+insertion_sort(): 128.3 seconds
+
+
+when x=10000
+sort(): 0 seconds
+insertion_sort(): 1.28 seconds
+
+
+when x=1000
+sort(): 0 seconds
+insertion_sort(): 0.01 seconds
+
+解釋:
+如果n<100 O(n^2)比較有效率
+如果n>=100 O(n*log2n)比較有效率
+如果數字太大的話quicksort會比insertionsort快很多
